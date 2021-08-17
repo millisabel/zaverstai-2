@@ -5,106 +5,109 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Botanika</title>
+    <title>Botanika - Авторские букеты в Петербурге</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header class="header">
-    <a href="#">
-        <img src="images/logo.svg" alt="лого">
-    </a>
-    <section class="">
+    <section class="hero">
         <h1 class="">Авторские букеты в Петербурге</h1>
         <p class="">Оригинальные свежие букеты с доставкой по всему городу</p>
-        <img src="images/foto/foto-1.png" alt="foto" class="" width="386" height="404">
-        <img src="images/foto/foto-2.png" alt="foto" class="" width="387" height="420">
+        <img src="images/photo/photo-1.png" alt="photo" class="" width="386" height="404">
+        <img src="images/photo/photo-2.png" alt="photo" class="" width="387" height="420">
         <a href="#" class="">Смотреть каталог</a>
     </section>
     <nav>
+        <a href="#">
+            <img src="images/logo.svg" alt="лого" width="100" height="33">
+        </a>
         <ul class="nav">
             <li class="nav__item">
-                <a href="#">Каталог</a>
+                <a href="#" class="nav__link">Каталог</a>
             </li>
             <li class="nav__item">
-                <a href="#">Доставка и оплата</a>
+                <a href="#" class="nav__link">Доставка и оплата</a>
             </li>
             <li class="nav__item">
-                <a href="#">Отзывы</a>
+                <a href="#reviews" class="nav__link">Отзывы</a>
             </li>
             <li class="nav__item">
-                <a href="#">Спецпредложения</a>
+                <a href="#" class="nav__link">Спецпредложения</a>
             </li>
             <li class="nav__item">
-                <a href="#">Контакты</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
             </li>
             <li class="nav__item">
-                <a href="#">Корзина</a>
+                <a href="#" class="nav__link">Корзина</a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="">
+<main>
     <section class="advantage">
-        <h2 class="visually-hidden">преимущества</h2>
-        <ul class="advantage__list">
-            <li class="advantage__item">
-                <h3 class="advantage__title">Быстрая доставка</h3>
-                <p class="advantage__text">Можем собрать букет и передать его в доставку всего за час.</p>
-                <img src="images/ico/car.svg" alt="Быстрая доставка" class="">
+        <h2 class="">преимущества</h2>
+        <ul class="list">
+            <li class="list__item">
+                <h3 class="list__title">Быстрая доставка</h3>
+                <p class="list__text">Можем собрать букет и передать его в доставку всего за час.</p>
             </li>
-            <li class="advantage__item">
-                <h3 class="advantage__title">Всегда свежие цветы</h3>
-                <p class="advantage__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
+            <li class="list__item">
+                <h3 class="list__title">Всегда свежие цветы</h3>
+                <p class="list__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
                     букетов каждый цветок.</p>
-                <img src="images/ico/bouquet.svg" alt="свежие цветы" class="">
             </li>
-            <li class="advantage__item">
-                <h3 class="advantage__title">Отправляем фото цветов</h3>
-                <p class="advantage__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
-                <img src="images/ico/photo.svg" alt="фото цветов" class="">
+            <li class="list__item">
+                <h3 class="list__title">Отправляем фото цветов</h3>
+                <p class="list__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
             </li>
         </ul>
     </section>
     <section class="popular">
-        <h2 class="">Популярные букеты</h2>
-        <ul class="popular__list">
-            <li class="popular__item">
-                <h3 class="popular__title">Букет «Нежность»</h3>
-                <p class="popular__text">Элегантный букет, который станет отличным подарком на день рождения или
-                    юбилей.</p>
-                <p class="popular__size">30 × 40 см</p>
-                <p class="popular__price">3600 руб.</p>
-                <img class="popular__img" src="images/foto/popular%20bouquets%20.png" alt="photo">
-                <button class="popular__btn">Заказать</button>
-            </li>
-        </ul>
+        <h2 class="title">Популярные букеты</h2>
+        <div class="slider">
+            <ul class="slider__list">
+                <li class="slider__item">
+                    <h3 class="slider__title">Букет «Нежность»</h3>
+                    <p class="slider__text">Элегантный букет, который станет отличным подарком на день рождения или
+                        юбилей.</p>
+                    <p class="slider__size">30 × 40 см</p>
+                    <p class="slider__price">3600 руб.</p>
+                    <img class="slider__img" src="images/photo/popular_bouquets.png" alt="photo">
+                    <button class="slider__btn">Заказать</button>
+                </li>
+            </ul>
+            <div class="slider__control">
+                <button class="slider__btn">preview</button>
+                <button class="slider__btn">next</button>
+            </div>
+        </div>
     </section>
-    <section class="">
-        <h2 class=""></h2>
+    <section class="catalog">
+        <h2 class="">Разделы каталога</h2>
         <ul class="">
             <li class="">
                 <h3 class="">Свадебные букеты</h3>
                 <p class="">Букеты для невест</p>
-                <img class="" src="images/foto/Bridal%20bouquets.png" alt="">
+                <img class="" src="images/photo/Bridal_bouquets.png" alt="photo bridal bouquets" width="387" height="442">
             </li>
             <li class="">
                 <h3 class="">Букеты с пионами</h3>
                 <p class="">Букеты с сезонными пионами</p>
-                <img class="" src="images/foto/Bouquets%20with%20peonies.png" alt="">
+                <img class="" src="images/photo/Bouquets_with_peonies.png" alt="photo bouquets with peonies" width="387" height="442">
             </li>
             <li class="">
                 <h3 class="">Выбрать букет</h3>
                 <p class="">Букеты в ассортименте</p>
-                <img class="" src="images/foto/Choose.png" alt="">
+                <img class="" src="images/photo/Choose.png" alt="photo choose" width="387" height="442">
             </li>
         </ul>
     </section>
     <section class="banner">
         <h2 class="banner__title">Скидка 10% на первый заказ</h2>
         <p class="banner__text">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
-        <img class="banner__img" src="images/foto/banner.png" alt="">
+        <img class="banner__img" src="images/photo/banner.png" alt="banner">
     </section>
     <section class="steps">
         <h2 class="">4 шага к идеальному букету</h2>
@@ -112,22 +115,18 @@
             <li class="">
                 <h3 class="">Заказ</h3>
                 <p class="">Выбирите понравившейся букет из каталога и оформите заказ</p>
-                <img class="" src="images/ico/order.svg" alt="ico">
             </li>
             <li class="">
                 <h3 class="">Уточнение деталей</h3>
                 <p class="">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
-                <img class="" src="images/ico/florist.svg" alt="ico">
             </li>
             <li class="">
                 <h3 class="">Оплата</h3>
                 <p class="">Оплатить заказ можно онлайн на сайте или при получении</p>
-                <img class="" src="images/ico/payment.svg" alt="ico">
             </li>
             <li class="">
                 <h3 class="">Доставка</h3>
                 <p class="">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
-                <img class="" src="images/ico/car.svg" alt="ico">
             </li>
         </ul>
     </section>
@@ -145,13 +144,11 @@
                 <a href="#" class="social__link">twitter</a>
             </li>
         </ul>
-        <div class="">
-            <img class="" src="images/foto/photo-3.png" alt="">
-            <img class="" src="images/foto/photo-4.png" alt="">
-            <img class="" src="images/foto/photo-5.png" alt="">
-        </div>
+        <img class="" src="images/photo/photo-3.png" alt="photo">
+        <img class="" src="images/photo/photo-4.png" alt="photo">
+        <img class="" src="images/photo/photo-5.png" alt="photo">
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <h2 class="">Отзывы</h2>
         <ul class="reviews__list">
             <li class="reviews__item">
@@ -160,7 +157,7 @@
                         Всё очень понравилось! Быстрое оформление заказа, выбор удобного
                         времени доставки. Всем большое спасибо!
                     </p>
-                    <cite>Марина</cite>
+                    <cite class="reviews__user">Марина</cite>
                 </blockquote>
             </li>
             <li class="reviews__item">
@@ -169,7 +166,7 @@
                         Внимательные флористы, вежливые. Магазин находится прям рядом с
                         метро. Букет очень понравился, буду ещё заказывать!
                     </p>
-                    <cite>Татьяна</cite>
+                    <cite class="reviews__user">Татьяна</cite>
                 </blockquote>
             </li>
             <li class="reviews__item">
@@ -178,51 +175,42 @@
                         Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а
                         флористы всегда помогут и точно соберут красивый букет!
                     </p>
-                    <cite>Ольга</cite>
+                    <cite class="reviews__user">Ольга</cite>
                 </blockquote>
             </li>
         </ul>
     </section>
-    <section class="map">
-        <h2>Мы ждем вас</h2>
-        <dl class="contacts">
-            <dt>Приходите к нам:</dt>
-            <dd>Санкт-Петербург,
-                ул. Большая Конюшенная, 19</dd>
-            <dt>Режим работы:</dt>
-            <dd>Пн-Вск, с 9-00 до 20-00</dd>
-            <dt>Позвоните нам:</dt>
-            <dd><a href="tel:+ 7 (812) 983-47-19">+ 7 (812) 983-47-19</a></dd>
-            <dt>Напишите нам:</dt>
-            <dd><a href="mailto:info@botanika.ru">info@botanika.ru</a></dd>
-        </dl>
+    <section class="contacts" id="contacts">
+        <h2 class="">Мы ждем вас</h2>
+        <p class="">Приходите к нам: <span class="">Санкт-Петербург, ул. Большая Конюшенная, 19</span></p>
+        <p class="">Режим работы: <span class="">Пн-Вск, с 9-00 до 20-00</span></p>
+        <p class="">Позвоните нам: <a href="tel:+ 7 (812) 983-47-19">+ 7 (812) 983-47-19</a></p>
+        <p class="">Напишите нам: <a href="mailto:info@botanika.ru">info@botanika.ru</a></p>
+        <img class="" src="images/map.png" alt="map" width="1440" height="645">
     </section>
 </main>
-
 <footer class="footer">
+    <a href="#">
+        <img src="images/logo.svg" alt="лого" width="100" height="33">
+    </a>
     <ul class="nav">
         <li class="nav__item">
-            <a href="#">
-                <img src="images/logo.svg" alt="лого">
-            </a>
+            <a href="#" class="nav__link">Каталог</a>
         </li>
         <li class="nav__item">
-            <a href="#">Каталог</a>
+            <a href="#" class="nav__link">Доставка и оплата</a>
         </li>
         <li class="nav__item">
-            <a href="#">Доставка и оплата</a>
+            <a href="#reviews" class="nav__link">Отзывы</a>
         </li>
         <li class="nav__item">
-            <a href="#">Отзывы</a>
+            <a href="#" class="nav__link">Спецпредложения</a>
         </li>
         <li class="nav__item">
-            <a href="#">Спецпредложения</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
         </li>
         <li class="nav__item">
-            <a href="#">Контакты</a>
-        </li>
-        <li class="nav__item">
-            <a href="#">Корзина</a>
+            <a href="#" class="nav__link">Корзина</a>
         </li>
     </ul>
     <ul class="social">

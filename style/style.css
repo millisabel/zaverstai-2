@@ -1,0 +1,25 @@
+:root {
+  --primary: 172, 124, 120;
+  --primary-color: var(--primary);
+  --seconary-color: #fff;
+  --btn-color: #d89999;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map */

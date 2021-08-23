@@ -1,12 +1,36 @@
 :root {
-  --primary: 172, 124, 120;
-  --primary-color: var(--primary);
+  --primary: 174, 124, 120;
+  --primary-color: rgba(var(--primary), 1);
   --seconary-color: #fff;
   --btn-color: #d89999;
+  --text-size: 16px;
 }
 
 *, *::after, *::before {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: var(--text-size);
+  color: var(--primary-color);
+  line-height: 1.25;
+  background: var(--seconary-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.invert {
+  color: var(--seconary-color);
+  background: var(--primary-color);
 }
 
 .visually-hidden {
@@ -20,6 +44,42 @@
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.logo {
+  width: 100px;
+  height: 33px;
+}
+
+.title {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: bold;
+}
+.title:first-letter {
+  text-transform: uppercase;
+}
+.title--mark {
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 285px;
+  padding: 30px 0;
+  text-decoration: none;
+  text-align: center;
+  color: var(--seconary-color);
+  border-radius: 40px;
+  background: var(--btn-color);
+}
+.btn:first-letter {
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

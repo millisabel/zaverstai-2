@@ -39,8 +39,9 @@
 </header>
 <main>
     <section class="hero">
-        <h1 class="title">Авторские букеты в <span class="title--mark">Петербурге</span></h1>
+        <h1 class="title">Авторские букеты <span class="title--mark">в Петербурге</span></h1>
         <p class="hero__text">Оригинальные свежие букеты с доставкой по всему городу</p>
+        <a href="#" class="btn">Смотреть каталог</a>
         <ul class="gallery list">
             <li class="">
                 <img src="images/photo/photo-1.jpg" alt="букет с розовыми тюльпанами" class="" width="386" height="404">
@@ -49,7 +50,6 @@
                 <img src="images/photo/photo-2.jpg" alt="букет с розами" class="" width="387" height="420">
             </li>
         </ul>
-        <a href="#" class="btn">Смотреть каталог</a>
     </section>
     <section class="advantage">
         <h2 class="visually-hidden">преимущества</h2>
@@ -79,35 +79,35 @@
                         юбилей.</p>
                     <p class="slider__size">30 × 40 см</p>
                     <p class="slider__price">3600 руб.</p>
-                    <img class="slider__img" src="images/photo/popular_bouquets.png" alt="Букет «Нежность»">
                     <a href="#" class="btn">Заказать</a>
+                    <img class="slider__img" src="images/photo/popular_bouquets.png" alt="Букет «Нежность»">
                 </li>
             </ul>
             <div class="slider__control">
-                <button class="slider__btn" type="button">preview</button>
-                <button class="slider__btn" type="button">next</button>
+                <button class="slider__btn slider__btn--prew" type="button">preview</button>
+                <button class="slider__btn slider__btn--next" type="button">next</button>
             </div>
         </div>
     </section>
     <section class="catalog">
         <h2 class="visually-hidden">Разделы каталога</h2>
         <ul class="list">
-            <li class="catalog__item">
+            <li class="list__item invert">
                 <a href="#" class="catalog__link">
-                    <h3 class="title title--light">Свадебные букеты</h3>
-                    <p class="text--light">Букеты для невест</p>
+                    <h3 class="title ">Свадебные букеты</h3>
+                    <p class="">Букеты для невест</p>
                 </a>
             </li>
-            <li class="catalog__item">
+            <li class="list__item invert">
                 <a href="#" class="catalog__link">
-                    <h3 class="title title--light">Букеты с пионами</h3>
-                    <p class="text--light">Букеты с сезонными пионами</p>
+                    <h3 class="title ">Букеты с пионами</h3>
+                    <p class="">Букеты с сезонными пионами</p>
                 </a>
             </li>
-            <li class="catalog__item">
+            <li class="list__item invert">
                 <a href="#" class="catalog__link">
-                    <h3 class="title title--light">Выбрать букет</h3>
-                    <p class="text--light">Букеты в ассортименте</p>
+                    <h3 class="title ">Выбрать букет</h3>
+                    <p class="">Букеты в ассортименте</p>
                 </a>
             </li>
         </ul>
@@ -143,30 +143,28 @@
     <section class="news">
         <h2 class="title">Следите за нашими новостями</h2>
         <p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-        <ul class="social">
-            <li class="social__item">
-                <a href="#" class="social__link">instagram</a>
+        <ul class="social list">
+            <li class="social__item social__instagram">
+                <a href="#" class="social__link ">instagram</a>
             </li>
-            <li class="social__item">
-                <a href="#" class="social__link">facebook</a>
+            <li class="social__item social__facebook">
+                <a href="#" class="social__link  ">facebook</a>
             </li>
-            <li class="social__item">
-                <a href="#" class="social__link">twitter</a>
+            <li class="social__item social__twitter">
+                <a href="#" class="social__link ">twitter</a>
             </li>
         </ul>
-        <div class="gallery">
-            <ul class="">
-                <li class="">
-                    <img class="gallery__item" src="images/photo/photo-3.jpg" alt="букет с розовыми цветами" width="387" height="460">
-                </li>
-                <li class="">
-                    <img class="gallery__item" src="images/photo/photo-4.jpg" alt="букет из роз" width="285" height="220">
-                </li>
-                <li class="">
-                    <img class="gallery__item" src="images/photo/photo-5.jpg" alt="летний букет" width="285" height="220">
-                </li>
-            </ul>
-        </div>
+        <ul class="gallery list">
+            <li class="">
+                <img class="gallery__item" src="images/photo/photo-3.jpg" alt="букет с розовыми цветами" width="387" height="460">
+            </li>
+            <li class="">
+                <img class="gallery__item" src="images/photo/photo-4.jpg" alt="букет из роз" width="285" height="220">
+            </li>
+            <li class="">
+                <img class="gallery__item" src="images/photo/photo-5.jpg" alt="летний букет" width="285" height="220">
+            </li>
+        </ul>
     </section>
     <section class="reviews" id="reviews">
         <h2 class="title">Отзывы</h2>
@@ -203,12 +201,27 @@
     <section class="contacts" id="contacts">
         <div class="contacts__wrap">
             <h2 class="title">Мы ждем вас</h2>
-            <p class="">Приходите к нам: <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833" target="_blank">Санкт-Петербург, ул. Большая Конюшенная, 19</a></p>
-            <p class="">Режим работы: <span class="">Пн-Вск, с 9-00 до 20-00</span></p>
-            <p class="">Позвоните нам: <a href="tel:+78129834719">+ 7 (812) 983-47-19</a></p>
-            <p class="">Напишите нам: <a href="mailto:info@botanika.ru">info@botanika.ru</a></p>
-            <img class="" src="images/map.jpg" alt="карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="645">
+            <dl>
+                <div class="contacts__item">
+                    <dt>Приходите к нам:</dt>
+                    <dd><a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833" target="_blank">Санкт-Петербург,<br/> ул. Большая Конюшенная, 19</a></dd>
+                </div>
+                <div class="contacts__item">
+                    <dt>Режим работы: </dt>
+                    <dd>Пн-Вск, с 9-00 до 20-00</dd>
+                </div>
+                <div class="contacts__item">
+                    <dt>Позвоните нам:</dt>
+                    <dd><a href="tel:+78129834719"  class="contacts__text--bold">+ 7 (812) 983-47-19</a></dd>
+                </div>
+                <div class="contacts__item">
+                    <dt>Напишите нам:</dt>
+                    <dd><a href="mailto:info@botanika.ru"  class="contacts__text--bold">info@botanika.ru</a></dd>
+                </div>
+            </dl>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1629745061215!5m2!1sru!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <img class="contacts__maps" src="images/map.jpg" alt="карта офиса по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="645">
     </section>
 </main>
 <footer class="footer invert">
@@ -236,14 +249,16 @@
         </li>
     </ul>
     <ul class="social list">
-        <li class="social__item">
+        <li class="social__item social__instagram ">
             <a href="#" class="social__link">instagram</a>
         </li>
-        <li class="social__item">
-            <a href="#" class="social__link">facebook</a>
+        <li class="social__item social__facebook ">
+            <a href="#" class="social__link ">facebook</a>
         </li>
-        <li class="social__item">
-            <a href="#" class="social__link">twitter</a>
+        <li class="social__item social__twitter ">
+            <a href="#" class="social__link">twitter
+
+            </a>
         </li>
     </ul>
 </footer>

@@ -368,6 +368,12 @@ img {
 .catalog {
   margin-bottom: 85px;
 }
+.catalog .title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
 .catalog__list {
   display: flex;
   flex-direction: row;
@@ -375,21 +381,41 @@ img {
   gap: 19px;
 }
 .catalog__item {
+  position: relative;
   display: flex;
   width: 388px;
   height: 442px;
   border-radius: 10px;
-  background-color: rgba(var(--primary), 0.6);
 }
-.catalog__item a {
-  margin: auto;
+.catalog__item::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 388px;
+  height: 442px;
+  background-color: rgba(var(--primary), 0.6);
+  transition: 0.6s;
+}
+.catalog__item:hover::before {
+  height: 0;
+}
+.catalog__item:nth-child(1) {
+  background: url("../images/photo/bridal_bouquets.jpg") 0 0 no-repeat;
+}
+.catalog__item:nth-child(2) {
+  background: url("../images/photo/bouquets_with_peonies.jpg") 0 0 no-repeat;
+}
+.catalog__item:nth-child(3) {
+  background: url("../images/photo/choose.jpg") 0 0 no-repeat;
+}
+.catalog__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
-.catalog .title {
-  margin-bottom: 8px;
-  font-weight: bold;
-  line-height: 48px;
-  letter-spacing: 0.02em;
+.catalog__text {
+  margin: auto;
 }
 
 .banner {

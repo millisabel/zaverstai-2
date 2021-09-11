@@ -12,73 +12,65 @@
 
 <body>
 <header class="header">
-    <nav class="nav wrap">
-        <ul class="nav__list list--reset">
-            <li class="nav__item">
-                <a href="#" class="nav__link">Каталог</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Доставка и оплата</a>
-            </li>
-            <li class="nav__item">
-                <a href="#reviews" class="nav__link">Отзывы</a>
-            </li>
-        </ul>
+    <div class="wrap">
         <a class="logo">
             <img src="images/svg/logo.svg" alt="логотип компании Botanika" width="100" height="33">
         </a>
-        <ul class="nav__list list--reset">
-            <li class="nav__item">
-                <a href="#" class="nav__link">Спецпредложения</a>
-            </li>
-            <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакты</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Корзина</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="nav">
+            <ul class="nav__list list--reset">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Каталог</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Доставка и оплата</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#reviews" class="nav__link">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Спецпредложения</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
     <section class="hero wrap">
         <div class="hero__item">
-            <h1 class="title">Авторские букеты <span class="title--mark">в Петербурге</span></h1>
+            <h1 class="hero__title title">Авторские букеты <span class="title--mark">в Петербурге</span></h1>
             <p class="hero__text">Оригинальные свежие букеты с доставкой по всему городу</p>
             <a href="#" class="btn">Смотреть каталог</a>
         </div>
-        <ul class="hero__item gallery list--reset">
-            <li>
-                <img src="images/photo/bouquet_with_pink_tulips.jpg" alt="букет с розовыми тюльпанами" class=""
-                     width="386" height="404">
-            </li>
-            <li>
-                <img src="images/photo/bouquet_with_roses.jpg" alt="букет с розами" class="" width="387" height="420">
-            </li>
-        </ul>
+        <div class="hero__img">
+            <img src="images/photo/bouquet_with_pink_tulips.jpg" alt="букет с розовыми тюльпанами"
+                 width="386" height="404">
+        </div>
+        <div class="hero__img">
+            <img src="images/photo/bouquet_with_roses.jpg" alt="букет с розами" width="387" height="420">
+        </div>
     </section>
     <section class="advantage wrap">
         <h2 class="visually-hidden">преимущества</h2>
         <ul class="list--reset advantage__list">
             <li class="card">
-                <div class="card__wrap">
-                    <h3 class="card__title">Быстрая доставка</h3>
-                    <p class="card__text">Можем собрать букет и передать его в доставку всего за час.</p>
-                </div>
+                <h3 class="card__title">Быстрая доставка</h3>
+                <p class="card__text">Можем собрать букет и передать его в доставку всего за час.</p>
             </li>
             <li class="card">
-                <div class="card__wrap">
-                    <h3 class="card__title">Всегда свежие цветы</h3>
-                    <p class="card__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
-                        букетов каждый цветок.</p>
-                </div>
+                <h3 class="card__title">Всегда свежие цветы</h3>
+                <p class="card__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
+                    букетов каждый цветок.</p>
             </li>
             <li class="card">
-                <div class="card__wrap">
-                    <h3 class="card__title">Отправляем фото цветов</h3>
-                    <p class="card__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
-                </div>
+                <h3 class="card__title">Отправляем фото цветов</h3>
+                <p class="card__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
             </li>
         </ul>
     </section>
@@ -95,7 +87,7 @@
                         <p class="slider__price">3600 руб.</p>
                         <a href="#" class="btn">Заказать</a>
                     </div>
-                    <img class="slider__img" src="images/photo/popular_bouquets.png" alt="Букет «Нежность»">
+                    <img class="slider__img" src="images/photo/popular_bouquets.png" alt="Букет «Нежность»" width="387" height="438">
                 </li>
             </ul>
             <div class="slider__control">
@@ -139,7 +131,9 @@
             <p class="">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и
                 получите скидку 10%.</p>
         </div>
-        <img class="banner__img" src="images/photo/banner.jpg" alt="фотография сборки букета" width="590" height="391">
+        <div class="banner__img">
+            <img class="banner__img" src="images/photo/banner.jpg" alt="фотография сборки букета" width="590" height="391">
+        </div>
     </section>
     <section class="steps wrap">
         <h2 class="title">4 шага к идеальному букету</h2>
@@ -179,16 +173,16 @@
             </ul>
         </div>
         <ul class="gallery list--reset">
-            <li class="">
-                <img class="gallery__item" src="images/photo/bouquet_of_roses.jpg" alt="букет из роз" width="285"
+            <li class="gallery__item">
+                <img class="gallery__img" src="images/photo/bouquet_of_roses.jpg" alt="букет из роз" width="285"
                      height="220">
             </li>
-            <li class="">
-                <img class="gallery__item" src="images/photo/summer_bouquet.jpg" alt="летний букет" width="285"
+            <li class="gallery__item">
+                <img class="gallery__img" src="images/photo/summer_bouquet.jpg" alt="летний букет" width="285"
                      height="220">
             </li>
-            <li class="">
-                <img class="gallery__item" src="images/photo/bouquet_with_pink_flowers.jpg"
+            <li class="gallery__item">
+                <img class="gallery__img" src="images/photo/bouquet_with_pink_flowers.jpg"
                      alt="букет с розовыми цветами" width="387" height="460">
             </li>
         </ul>
@@ -296,5 +290,7 @@
         </ul>
     </div>
 </footer>
+
+<script src="js/menu.js"></script>
 </body>
 </html>
